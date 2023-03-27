@@ -1,0 +1,5 @@
+string question   # Question to get an explanation
+                  # "Why have you changed the planned path?" to get an explanation about a change in the navigation plan.
+                  # "What is the current navigation status?"" to get an explanation about the status of the navigation.
+---
+string answer         # Explanation to the question

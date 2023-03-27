@@ -1,0 +1,11 @@
+poses:
+  - pose:
+      position:
+        x: -9.22
+        y: -25.83
+        z: 0.0
+      orientation:
+        x: 0.0
+        y: 0.0
+        z: 0.0
+        w: 0.18

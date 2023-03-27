@@ -1,0 +1,40 @@
+map:
+  durability: transient_local
+  reliability: reliable
+  history: keep_all
+  depth: 5
+
+scan:
+  durability: volatile
+  reliability: best_effort
+  history: keep_last
+  depth: 5
+
+camera/image_raw:
+  durability: volatile
+  reliability: best_effort
+  history: keep_last
+  depth: 5
+
+tf_static:
+  durability: transient_local
+  reliability: reliable
+  history: keep_all
+
+robot_description:
+  durability: transient_local
+  reliability: reliable
+  history: keep_last
+  depth: 5
+
+global_costmap/costmap:
+  durability: transient_local
+  reliability: reliable
+  history: keep_last
+  depth: 5
+
+local_costmap/costmap:
+  durability: transient_local
+  reliability: reliable
+  history: keep_last
+  depth: 5
