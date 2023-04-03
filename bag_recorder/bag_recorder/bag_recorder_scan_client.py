@@ -8,7 +8,7 @@ from rclpy.qos import QoSDurabilityPolicy, QoSHistoryPolicy, QoSReliabilityPolic
 from sensor_msgs.msg import LaserScan
 
 class ScanRecorderClientAsync(Node):
-    DISTANCE_THRESHOLD = 0.3 # 30cm
+    DISTANCE_THRESHOLD = 1.35 # 1.35m
 
     def __init__(self):
 

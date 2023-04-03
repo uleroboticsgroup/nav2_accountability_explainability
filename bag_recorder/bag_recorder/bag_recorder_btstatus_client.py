@@ -48,6 +48,9 @@ class BTStatusRecorderClientAsync(Node):
                     self.req.data = True
                     self.flag = True
                     self.send_request()
+            elif (current_status == "RUNNING" or current_status == "SUCCESS" or current_status == "IDLE") and node_name in self.failed_bt_nodes:
+                    self.get_logger().info("%s recovered" % (node_name))
+                    self.failed_bt_nodes.remove(node_name)
 
             #Stop recording if no node is in FAILURE status
             if len(self.failed_bt_nodes) == 0 and self.flag:

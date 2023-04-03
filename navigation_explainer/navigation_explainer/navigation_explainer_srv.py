@@ -18,7 +18,7 @@ import numpy as np
 
 class NavigationExplainer(Node):
     DISTANCE_THRESHOLD = 1.2 #(20%)
-    OBSTACLE_DISTANCE_THRESHOLD = 1.4 #1.4 m
+    OBSTACLE_DISTANCE_THRESHOLD = 1.3 #1.3 m
     def __init__(self):
         super().__init__('navigation_explainer')
 
